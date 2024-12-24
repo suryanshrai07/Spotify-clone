@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilty.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/logo.svg"
+        class="invert"
+        style="cursor: pointer"
+        alt=""
+      />
+      <div class="search-bar">
+        <div class="home bg-color">
+          <img
+            src="images/home.svg"
+            class="invert home-button"
+            style="cursor: pointer"
+            alt=""
+          />
+        </div>
+
+        <div class="input-bar flex bg-color">
+          <img
+            src="images/search.svg"
+            class="invert"
+            style="cursor: pointer"
+            alt=""
+          />
+          <input
+            type="text"
+            class="bg-color"
+            placeholder="what do you want to play?"
+          />
+        </div>
+      </div>
+
+      <div class="buttons flex">
+        <button class="sign-up">Sign up</button>
+        <button class="log-in">Log in</button>
+      </div>
+    </header>
+
+    <main class="flex">
+      <div class="left bg-color">
+        <div class="left-header hover">
+          <div class="library cursor">
+            <img src="images/library.svg" class="invert" alt="" />
+            <h4>Your Library</h4>
+          </div>
+          <img src="images/cross.svg" class="invert cursor" id="cross" alt="" />
+        </div>
+
+        <div class="songlist">
+          <ul class="flex">
+            <!-- <li>
+              <img src="images/music.svg" class="invert" alt="" />
+                <p>song name</p>
+              <img src="images/playSong.svg" class="invert" alt="" />
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="left-footer flex">
+          <ul>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">saftey & privacy center</a></li>
+            <li><a href="&">privacy policy</a></li>
+            <li><a href="$">cookies</a></li>
+            <li><a href="@">About Ads</a></li>
+            <li><a href="~">Accessibility</a></li>
+            <li><a href="~">cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right bg-color">
+        <span class="hamburger">
+          <img
+            src="images/hamburger.svg"
+            class="invert"
+            id="hamburger"
+            alt=""
+          />
+        </span>
+
+        <h3>Your Playlist</h3>
+
+        <div class="playlist"></div>
+        <div class="playbar flex">
+          <div class="playbar-info">
+            <div class="songinfo flex"></div>
+            <div class="songbuttons flex cursor">
+              <img width="28" src="images/previous.svg" id="previous" alt="" />
+              <img width="28" src="images/play.svg" id="play" alt="" />
+              <img width="28" src="images/next.svg" id="next" alt="" />
+            </div>
+            <div class="songtime"></div>
+          </div>
+
+          <div class="seekbar cursor">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
